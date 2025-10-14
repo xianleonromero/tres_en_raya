@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import './Game.css';
 const Cell = () =>{
+    const [player, setPlayer]= useState('');
     const onClickCell= () =>{
-        alert("Evento");
+        setPlayer('X');
     }
     return(
-        <div className="Game-cell" onClick={onClickCell}></div>
+        <div className="Game-cell" onClick={onClickCell}>{player}</div>
     )
 }
 
