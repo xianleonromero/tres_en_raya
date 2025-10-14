@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tres_en_raya/static/css/main.134ded82.css",
+    "main.js": "/tres_en_raya/static/js/main.317342fc.js",
+    "index.html": "/tres_en_raya/index.html",
+    "main.134ded82.css.map": "/tres_en_raya/static/css/main.134ded82.css.map",
+    "main.317342fc.js.map": "/tres_en_raya/static/js/main.317342fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.134ded82.css",
+    "static/js/main.317342fc.js"
+  ]
+}
