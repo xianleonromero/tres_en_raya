@@ -10,12 +10,14 @@ function App() {
         ]
     )
     const onClickCell= (index) =>{
-        const newTable=table.slice();
-        newTable[index]=player;
-        setTable(newTable);
-        player === 'X'
-            ? setPlayer('0') 
-            : setPlayer('X')
+        if (table[index]===null){
+            const newTable=table.slice();
+            newTable[index]=player;
+            setTable(newTable);
+            player === 'X'
+                ? setPlayer('0') 
+                : setPlayer('X')
+        }
     }
   return(
     <>
