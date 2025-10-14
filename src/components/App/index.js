@@ -21,7 +21,7 @@ function App() {
     }
   return(
     <>
-    <h1>React</h1>
+    <h1>3 en raya- Turno de {player}</h1>
     <Game player={player} onClickCell={onClickCell} table={table} />
     </>
     )
