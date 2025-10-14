@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# 🎮 Tres en Raya - Tic Tac Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Juego clásico del tres en raya desarrollado con React. Incluye detección automática de ganador, sistema de empates y reinicio de partida.
 
-## Available Scripts
+## 🕹️ [**JUGAR AHORA**](https://xianleonromero.github.io/tres_en_raya)
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ **Detección automática de ganador** - El juego identifica automáticamente cuando un jugador hace 3 en raya  
+✅ **Sistema de empates** - Detecta cuando ya no hay más movimientos posibles  
+✅ **Modal de victoria** - Pantalla emergente que muestra el ganador o empate  
+✅ **Reinicio rápido** - Botón para comenzar una nueva partida sin recargar  
+✅ **Alternancia de turnos** - Cambio automático entre jugadores X y O  
+✅ **Interfaz responsive** - Diseño adaptable a diferentes tamaños de pantalla  
+✅ **Validación de movimientos** - No permite jugar en casillas ya ocupadas  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Reglas del Juego
 
-### `npm run build`
+1. El juego es para 2 jugadores que juegan de forma alternada
+2. Un jugador usa **X** y el otro usa **O**
+3. Los jugadores colocan sus marcas en espacios vacíos del tablero 3x3
+4. El primer jugador que consiga **3 en línea** (horizontal, vertical o diagonal) gana
+5. Si todas las casillas están llenas y no hay ganador, el juego termina en **empate**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologías Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React 18.3.1** - Biblioteca de JavaScript para construir interfaces de usuario
+- **React Hooks** - useState para el manejo del estado
+- **React Portals** - Para renderizar el modal fuera del árbol DOM principal
+- **CSS3** - Estilos personalizados y diseño responsive
+- **GitHub Pages** - Hosting y despliegue
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Instalación Local
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si quieres ejecutar el proyecto en tu máquina local:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerrequisitos
+- Node.js instalado (versión 14 o superior)
+- npm o yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pasos
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/xianleonromero/tres_en_raya.git
 
-## Learn More
+# 2. Entrar al directorio del proyecto
+cd tres_en_raya
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 3. Instalar las dependencias
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 4. Iniciar el servidor de desarrollo
+npm start
+```
 
-### Code Splitting
+El juego se abrirá automáticamente en tu navegador en `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Scripts Disponibles
+```bash
+npm start          # Inicia el servidor de desarrollo
+npm run build      # Crea una versión optimizada para producción
+npm test           # Ejecuta los tests
+npm run deploy     # Despliega la aplicación en GitHub Pages
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📂 Estructura del Proyecto
+```
+tres_en_raya/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── App/
+│   │   ├── App.css
+│   │   └── index.js
+│   ├── Game/
+│   │   ├── Game.css
+│   │   └── index.js
+│   ├── Modal/
+│   │   └── index.js
+│   ├── VictoryScreen/
+│   │   ├── VictoryScreen.css
+│   │   └── index.js
+│   ├── index.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 👤 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Xian Leon Romero**
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: [@xianleonromero](https://github.com/xianleonromero)
+- Proyecto: [Tres en Raya](https://github.com/xianleonromero/tres_en_raya)
+- Demo: [Jugar Online](https://xianleonromero.github.io/tres_en_raya)
