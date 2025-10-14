@@ -1,7 +1,10 @@
 import './Game.css';
 const Cell = () =>{
+    const onClickCell= () =>{
+        alert("Evento");
+    }
     return(
-        <div className="Game-cell"></div>
+        <div className="Game-cell" onClick={onClickCell}></div>
     )
 }
 
