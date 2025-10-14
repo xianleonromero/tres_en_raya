@@ -23,6 +23,7 @@ function App() {
         }
     }
     function calculateWinner(){
+        let counterCell=0;
         const lines=[
             [0,1,2],
             [3,4,5],
@@ -42,6 +43,15 @@ function App() {
             ){
                 return table[a];
             }
+        }
+        for (let i=0;i<table.length;i++){
+            if (table[i]===null){
+                return null;
+            }
+            if (counterCell>7){
+                return 'Empate';
+            }
+            counterCell++;
         }
         return null;
     }
