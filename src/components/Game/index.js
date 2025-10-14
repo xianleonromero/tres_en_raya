@@ -1,6 +1,23 @@
+import './Game.css';
+const Cell = () =>{
+    return(
+        <div className="Game-cell"></div>
+    )
+}
+
 const Game = () =>{
     return(
-        <h2>Juego</h2>
+        <section className="Game">
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+        </section>
     )
 }
 export{Game};
