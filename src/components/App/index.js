@@ -12,6 +12,13 @@ function App() {
         ]
     )
     const win=calculateWinner();
+    const onClickReplay=()=>{
+        setTable([
+            null,null,null,
+            null,null,null,
+            null,null,null
+        ]);
+    }
     const onClickCell= (index) =>{
         if (table[index]===null){
             const newTable=table.slice();
@@ -57,7 +64,7 @@ function App() {
     }
   return(
     <main className="App">
-        {!!win && <Modal playerWin={win}/>}
+        {!!win && <Modal playerWin={win} onClickReplay={onClickReplay}/>}
         <h1 className="App-title">3 en raya- Turno de {player}</h1>
         <Game player={player} onClickCell={onClickCell} table={table} />
     </main>
