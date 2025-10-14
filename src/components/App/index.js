@@ -1,5 +1,7 @@
 import { useState } from "react";
 import {Game} from "../Game";
+import {Modal} from "../Modal";
+import './App.css'
 function App() {
     const [player,setPlayer]=useState('X');
     const [table,setTable]=useState(
@@ -20,10 +22,11 @@ function App() {
         }
     }
   return(
-    <>
-    <h1>3 en raya- Turno de {player}</h1>
-    <Game player={player} onClickCell={onClickCell} table={table} />
-    </>
+    <main className="App">
+        <Modal />
+        <h1 className="App-title">3 en raya- Turno de {player}</h1>
+        <Game player={player} onClickCell={onClickCell} table={table} />
+    </main>
     )
 }
 export {App};
