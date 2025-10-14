@@ -1,27 +1,22 @@
-import { useState } from 'react';
 import './Game.css';
-const Cell = () =>{
-    const [player, setPlayer]= useState('');
-    const onClickCell= () =>{
-        setPlayer('X');
-    }
+const Cell = ({onClickCell,player}) =>{
     return(
         <div className="Game-cell" onClick={onClickCell}>{player}</div>
     )
 }
 
-const Game = () =>{
+const Game = ({onClickCell,player}) =>{
     return(
         <section className="Game">
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
+            <Cell onClickCell={onClickCell} player={player} />
         </section>
     )
 }
