@@ -47,7 +47,7 @@ function App() {
     }
   return(
     <main className="App">
-        {!!win && <Modal/>}
+        {!!win && <Modal playerWin={win}/>}
         <h1 className="App-title">3 en raya- Turno de {player}</h1>
         <Game player={player} onClickCell={onClickCell} table={table} />
     </main>

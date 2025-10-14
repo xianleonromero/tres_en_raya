@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { VictoryScreen } from "../VictoryScreen";
-const Modal = () =>{
+const Modal = ({playerWin}) =>{
     return ReactDOM.createPortal(
-        <VictoryScreen />,
+        <VictoryScreen winPlayer={playerWin}/>,
         document.getElementById('modal')
     )
 }
