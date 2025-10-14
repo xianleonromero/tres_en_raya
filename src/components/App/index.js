@@ -13,6 +13,9 @@ function App() {
         const newTable=table.slice();
         newTable[index]=player;
         setTable(newTable);
+        player === 'X'
+            ? setPlayer('0') 
+            : setPlayer('X')
     }
   return(
     <>
