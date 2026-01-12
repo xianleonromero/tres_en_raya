@@ -1,5 +1,4 @@
-# 🎮 Tres en Raya - Tic Tac Toe
-
+# 🎮 Tres en Raya
 Juego clásico del tres en raya desarrollado con React. Incluye detección automática de ganador, sistema de empates y reinicio de partida.
 
 ## 🕹️ [**JUGAR AHORA**](https://xianleonromero.github.io/tres_en_raya)
